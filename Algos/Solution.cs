@@ -4895,6 +4895,60 @@ Explanation:
 
             return set.Count <= 1;
         }
+
+        //O(N) time and O(N) space
+        public static List<int> SpiralTraverse(int[,] array)
+        {
+            // Write your code here.
+            var retval = new List<int>();
+            var rsize = array.GetLength(0);
+            var csize = array.GetLength(1);
+            int startRow = 0;
+            int startCol = 0;
+            int endRow = rsize - 1;
+            int endCol = csize - 1;
+            while (retval.Count < rsize * csize)
+            {
+                ProcessPerimeter(ref array, ref retval, startRow, endRow, startCol, endCol);
+                startRow++;
+                startCol++;
+                endRow--;
+                endCol--;
+            }
+            return retval;
+        }
+
+        private static void ProcessPerimeter(ref int[,] array, ref List<int> retval, int startRow, int endRow, int startCol, int endCol)
+        {
+            //left
+            for (int j = startCol; j <= endCol; j++)
+            {
+                retval.Add(array[startRow, j]);
+            }
+            //down
+            for (int j = startRow + 1; j <= endRow; j++)
+            {
+                retval.Add(array[j, endCol]);
+            }
+            //right
+            if (startRow < endRow)
+            {
+                for (int j = endCol - 1; j >= startCol; j--)
+                {
+                    retval.Add(array[endRow, j]);
+                }
+            }
+
+            //up
+            if (startCol < endCol)
+            {
+                for (int j = endRow - 1; j > startRow; j--)
+                {
+                    retval.Add(array[j, startCol]);
+                }
+            }
+
+        }
         //end of class
     }
     //end of namespace
