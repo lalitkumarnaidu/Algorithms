@@ -1,0 +1,196 @@
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/NUnit3.TestAdapter.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/NUnit3.TestAdapter.pdb
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/nunit.engine.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/nunit.engine.api.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/UnitTest.deps.json
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/UnitTest.runtimeconfig.json
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/UnitTest.runtimeconfig.dev.json
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/UnitTest.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/UnitTest.pdb
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.CodeCoverage.Shim.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/Microsoft.DotNet.InternalAbstractions.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/Microsoft.TestPlatform.CoreUtilities.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/Microsoft.TestPlatform.PlatformAbstractions.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/Microsoft.TestPlatform.CommunicationUtilities.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/Microsoft.TestPlatform.CrossPlatEngine.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/Microsoft.TestPlatform.Utilities.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.Common.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/testhost.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/NuGet.Frameworks.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/nunit.framework.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/System.Xml.XPath.XmlDocument.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/cs/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/cs/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/de/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/de/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/es/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/es/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/fr/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/fr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/it/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/it/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/ja/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/ja/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/ko/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/ko/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/pl/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/pl/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/ru/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/ru/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/tr/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/tr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/cs/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/cs/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/cs/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/de/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/de/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/de/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/es/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/es/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/es/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/fr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/fr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/fr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/it/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/it/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/it/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/ja/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/ja/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/ja/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/ko/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/ko/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/ko/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/pl/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/pl/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/pl/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/ru/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/ru/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/ru/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/tr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/tr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/tr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/Algos.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/Algos.pdb
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/obj/Debug/netcoreapp3.1/UnitTest.csprojAssemblyReference.cache
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/obj/Debug/netcoreapp3.1/UnitTest.AssemblyInfoInputs.cache
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/obj/Debug/netcoreapp3.1/UnitTest.AssemblyInfo.cs
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/obj/Debug/netcoreapp3.1/UnitTest.csproj.CoreCompileInputs.cache
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/obj/Debug/netcoreapp3.1/UnitTest.csproj.CopyComplete
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/obj/Debug/netcoreapp3.1/UnitTest.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/obj/Debug/netcoreapp3.1/UnitTest.pdb
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/UnitTest/obj/Debug/netcoreapp3.1/UnitTest.genruntimeconfig.cache
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/NUnit3.TestAdapter.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/NUnit3.TestAdapter.pdb
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/nunit.engine.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/nunit.engine.api.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/UnitTest.deps.json
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/UnitTest.runtimeconfig.json
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/UnitTest.runtimeconfig.dev.json
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/UnitTest.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/UnitTest.pdb
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.CodeCoverage.Shim.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/Microsoft.DotNet.InternalAbstractions.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/Microsoft.TestPlatform.CoreUtilities.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/Microsoft.TestPlatform.PlatformAbstractions.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/Microsoft.TestPlatform.CommunicationUtilities.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/Microsoft.TestPlatform.CrossPlatEngine.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/Microsoft.TestPlatform.Utilities.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.TestPlatform.Common.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/testhost.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/NuGet.Frameworks.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/nunit.framework.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/System.Xml.XPath.XmlDocument.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/cs/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/cs/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/de/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/de/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/es/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/es/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/fr/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/fr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/it/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/it/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/ja/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/ja/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/ko/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/ko/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/pl/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/pl/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/ru/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/ru/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/tr/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/tr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.TestPlatform.CoreUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/cs/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/cs/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/cs/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/de/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/de/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/de/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/es/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/es/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/es/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/fr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/fr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/fr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/it/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/it/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/it/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/ja/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/ja/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/ja/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/ko/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/ko/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/ko/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/pl/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/pl/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/pl/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/ru/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/ru/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/ru/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/tr/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/tr/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/tr/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/Algos.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/bin/Debug/netcoreapp3.1/Algos.pdb
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/obj/Debug/netcoreapp3.1/UnitTest.csprojAssemblyReference.cache
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/obj/Debug/netcoreapp3.1/UnitTest.AssemblyInfoInputs.cache
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/obj/Debug/netcoreapp3.1/UnitTest.AssemblyInfo.cs
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/obj/Debug/netcoreapp3.1/UnitTest.csproj.CoreCompileInputs.cache
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/obj/Debug/netcoreapp3.1/UnitTest.csproj.CopyComplete
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/obj/Debug/netcoreapp3.1/UnitTest.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/obj/Debug/netcoreapp3.1/UnitTest.pdb
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/obj/Debug/netcoreapp3.1/UnitTest.genruntimeconfig.cache

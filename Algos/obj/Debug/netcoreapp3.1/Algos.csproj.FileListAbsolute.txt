@@ -1,0 +1,22 @@
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/Algos/bin/Debug/netcoreapp3.1/Algos.deps.json
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/Algos/bin/Debug/netcoreapp3.1/Algos.runtimeconfig.json
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/Algos/bin/Debug/netcoreapp3.1/Algos.runtimeconfig.dev.json
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/Algos/bin/Debug/netcoreapp3.1/Algos.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/Algos/bin/Debug/netcoreapp3.1/Algos.pdb
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/Algos/obj/Debug/netcoreapp3.1/Algos.AssemblyInfoInputs.cache
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/Algos/obj/Debug/netcoreapp3.1/Algos.AssemblyInfo.cs
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/Algos/obj/Debug/netcoreapp3.1/Algos.csproj.CoreCompileInputs.cache
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/Algos/obj/Debug/netcoreapp3.1/Algos.dll
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/Algos/obj/Debug/netcoreapp3.1/Algos.pdb
+/Users/lalitkumarnaidu/Documents/Leet/Solutions/Algos/obj/Debug/netcoreapp3.1/Algos.genruntimeconfig.cache
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/Algos/bin/Debug/netcoreapp3.1/Algos.deps.json
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/Algos/bin/Debug/netcoreapp3.1/Algos.runtimeconfig.json
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/Algos/bin/Debug/netcoreapp3.1/Algos.runtimeconfig.dev.json
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/Algos/bin/Debug/netcoreapp3.1/Algos.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/Algos/bin/Debug/netcoreapp3.1/Algos.pdb
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/Algos/obj/Debug/netcoreapp3.1/Algos.AssemblyInfoInputs.cache
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/Algos/obj/Debug/netcoreapp3.1/Algos.AssemblyInfo.cs
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/Algos/obj/Debug/netcoreapp3.1/Algos.csproj.CoreCompileInputs.cache
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/Algos/obj/Debug/netcoreapp3.1/Algos.dll
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/Algos/obj/Debug/netcoreapp3.1/Algos.pdb
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/Algos/obj/Debug/netcoreapp3.1/Algos.genruntimeconfig.cache

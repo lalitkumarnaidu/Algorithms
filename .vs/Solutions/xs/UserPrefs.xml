@@ -1,0 +1,41 @@
+﻿<Properties StartupConfiguration="{32E49536-8951-4CE5-B491-B02C793EBFC3}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Solutions" expanded="True">
+            <Node name="Algos" expanded="True">
+              <Node name="DoublyLinkedList.cs" selected="True" />
+            </Node>
+            <Node name="UnitTest" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Solutions" expanded="True">
+            <Node name="UnitTest" expanded="True">
+              <Node name="Solutions.UnitTest" expanded="True">
+                <Node name="Tests" expanded="True">
+                  <Node name="WordBreakTrie" selected="True" />
+                </Node>
+              </Node>
+              <Node name="UnitTest" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Algos PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/RegexTests.cs" relfile="UnitTest/RegexTests.cs" line="23" column="1" />
+      <Breakpoint file="/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/UnitTests.cs" relfile="UnitTest/UnitTests.cs" line="1008" column="1" />
+      <Breakpoint file="/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/UnitTests.cs" relfile="UnitTest/UnitTests.cs" line="1007" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
