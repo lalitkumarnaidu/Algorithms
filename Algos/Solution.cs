@@ -4949,6 +4949,35 @@ Explanation:
             }
 
         }
+
+
+        public static int FindFirstMissingPositive(int[] arr)
+        {
+            int i = 0;
+            while(i < arr.Length)
+            {
+                /*
+                 *i = 0  1  2   3  4
+                     [1, 3, 17, 2, 21]
+                 */
+                if(arr[i] > 0 && arr[i] < arr.Length && arr[arr[i] - 1] != arr[i])
+                {
+                    int idx = arr[i] - 1;
+                    int temp = arr[i];
+                    arr[i] = arr[idx];
+                    arr[idx] = temp;
+                }
+                i++;
+            }
+
+            i = 0;
+            while(i < arr.Length)
+            {
+                if (arr[i] != i + 1)
+                    return i + 1;
+            }
+            return arr.Length + 1;
+        }
         //end of class
     }
     //end of namespace
