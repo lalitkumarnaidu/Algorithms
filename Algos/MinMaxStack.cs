@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Algos.MinMaxStack
+namespace LeetSolutions.Algos.MinMaxStack
 {
 	public class MinMaxStack
 	{

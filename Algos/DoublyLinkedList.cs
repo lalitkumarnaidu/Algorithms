@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Algos.DoublyLinkedList
+namespace LeetSolutions.Algos.DoublyLinkedList
 {
 	public class DoublyLinkedList
 	{

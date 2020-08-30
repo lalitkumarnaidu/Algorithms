@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Algos.ReplaceWords
+namespace LeetSolutions.Algos.ReplaceWords
 {
     public class ReplaceWords
     {

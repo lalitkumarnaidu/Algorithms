@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Algos.Median
+namespace LeetSolutions.Algos.Median
 {
     public class MedianFinder
     {

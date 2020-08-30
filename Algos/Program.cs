@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Solutions.Algos
+namespace LeetSolutions.Algos
 {
     class Program
     {

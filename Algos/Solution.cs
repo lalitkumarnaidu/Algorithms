@@ -6,12 +6,12 @@ using System.Xml.Linq;
 using System.Globalization;
 using System.Net.Http.Headers;
 using System.Text.RegularExpressions;
-using Algos;
+using LeetSolutions.Algos;
 using System.Text;
-using static Algos.Solution;
+using static LeetSolutions.Algos.Solution;
 using System.Security.Cryptography;
 
-namespace Solutions.Algos{
+namespace LeetSolutions.Algos{
     public static partial class Solution
     {
         /*
@@ -535,7 +535,7 @@ Explanation:
                         }
 
 
-                    }
+                    } 
                 }
                 if (rotting.Count == 0)
                 {

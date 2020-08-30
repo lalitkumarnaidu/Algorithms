@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Algos.MapSum
+namespace LeetSolutions.Algos.MapSum
 {
     /*
      * Map Sum Pairs

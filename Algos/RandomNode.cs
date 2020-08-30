@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Algos
+namespace LeetSolutions.Algos
 {
     public static partial class Solution
     {

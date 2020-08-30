@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Algos
+namespace LeetSolutions.Algos
 {
     public static partial class Solution {
         public class Trie
