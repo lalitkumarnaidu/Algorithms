@@ -1,27 +1,14 @@
-﻿<Properties StartupConfiguration="{32E49536-8951-4CE5-B491-B02C793EBFC3}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Algos/LRUCache.cs">
+﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{32E49536-8951-4CE5-B491-B02C793EBFC3}|Default">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="Algos/DoublyLinkedList.cs" Line="17" Column="5" />
-      <File FileName="Algos/Solution.cs" Line="3071" Column="28" />
-      <File FileName="Algos/MapSum.cs" Line="4" Column="20" />
-      <File FileName="Algos/MinMaxStack.cs" Line="9" Column="31" />
-      <File FileName="Algos/Program.cs" Line="5" Column="15" />
-      <File FileName="UnitTest/UnitTests.cs" Line="11" Column="15" />
-      <File FileName="Algos/ListNode.cs" Line="19" Column="52" />
-      <File FileName="Algos/RandomNode.cs" Line="2" Column="25" />
-      <File FileName="Algos/Trie.cs" Line="5" Column="25" />
-      <File FileName="Algos/TicTacToe.cs" Line="15" Column="33" />
-      <File FileName="Algos/ReplaceWords.cs" Line="21" Column="35" />
-      <File FileName="Algos/RabinKarp.cs" Line="16" Column="1" />
-      <File FileName="Algos/Median.cs" Line="15" Column="30" />
-      <File FileName="Algos/LRUCache.cs" Line="4" Column="25" />
+      <File FileName="Algos/Solution.cs" Line="6203" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="LeetSolutions" expanded="True">
             <Node name="Algos" expanded="True">
-              <Node name="LRUCache.cs" selected="True" />
+              <Node name="Solution.cs" selected="True" />
             </Node>
             <Node name="UnitTest" expanded="True" />
           </Node>
@@ -29,16 +16,7 @@
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="Solutions" expanded="True">
-            <Node name="UnitTest" expanded="True">
-              <Node name="Solutions.UnitTest" expanded="True">
-                <Node name="Tests" expanded="True">
-                  <Node name="WordBreakTrie" selected="True" />
-                </Node>
-              </Node>
-              <Node name="UnitTest" expanded="True" />
-            </Node>
-          </Node>
+          <Node name="LeetSolutions" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
@@ -49,7 +27,8 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/RegexTests.cs" relfile="UnitTest/RegexTests.cs" line="23" column="1" />
-      <Breakpoint file="/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/UnitTests.cs" relfile="UnitTest/UnitTests.cs" line="1021" column="1" />
+      <Breakpoint file="/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/Algos/Solution.cs" relfile="Algos/Solution.cs" line="5452" column="1" />
+      <Breakpoint file="/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/UnitTest/UnitTests.cs" relfile="UnitTest/UnitTests.cs" line="1192" column="1" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
