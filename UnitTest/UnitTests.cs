@@ -527,7 +527,7 @@ namespace LeetSolutions.UnitTest
                                                                             "air","pug","pox","vow","got","meg","zoe","amp","ale","bud","gee",
                                                                             "pin","dun","pat","ten","mob"});
             Assert.True(result.Count == 3);
-    }
+        }
 
         [Test]
         public void CourseScheduleTest()
@@ -562,7 +562,7 @@ namespace LeetSolutions.UnitTest
         public void CutOffTreeTest()
         {
             int[][] ip = new int[][] { new int[] { 1, 2, 3 }, new int[] { 0, 0, 0 }, new int[] { 7, 10, 5 } };
-            Assert.True(Solution.CutOffTree(ip)== -1);
+            Assert.True(Solution.CutOffTree(ip) == -1);
             ip = new int[][] { new int[] { 1, 1, 1 }, new int[] { 0, 6, 0 }, new int[] { 1, 1, 1 } };
             Assert.True(Solution.CutOffTree(ip) == 2);
             ip = new int[][] { new int[] { 1, 9, 2 }, new int[] { 0, 1, 1 }, new int[] { 6, 3, 4 } };
@@ -647,7 +647,7 @@ namespace LeetSolutions.UnitTest
         {
             var ip = new int[][] { new int[] { 1, -1, 2 } };
             Assert.True(Solution.UniquePathsIII(ip) == 0);
-            ip = new int[][]{new int[]{1, 0, 0, 0},new int[]{0,0,0,0}, new int[]{0,0,2,-1} };
+            ip = new int[][] { new int[] { 1, 0, 0, 0 }, new int[] { 0, 0, 0, 0 }, new int[] { 0, 0, 2, -1 } };
             Assert.True(Solution.UniquePathsIII(ip) == 2);
         }
 
@@ -664,7 +664,7 @@ namespace LeetSolutions.UnitTest
         public void WordBreakTest()
         {
             var s = "aaaaaaa";
-            var wordDict = new List<string>{"aaaa", "aaa"};
+            var wordDict = new List<string> { "aaaa", "aaa" };
             Assert.True(Solution.WordBreak(s, wordDict));
         }
 
@@ -785,7 +785,7 @@ namespace LeetSolutions.UnitTest
         {
             int[] h = new int[] { 0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1 };
             var r = Solution.Trap(h);
-            Assert.True( r == 6);
+            Assert.True(r == 6);
             h = new int[] { 2, 0, 1 };
             r = Solution.Trap(h);
             Assert.True(r == 1);
@@ -794,7 +794,7 @@ namespace LeetSolutions.UnitTest
         [Test]
         public void ReverseListOfSizeK()
         {
-            var h = ListNode.GetList(new int[] { 4, 3, 2, 1, 8, 7, 6, 5, 12, 11, 10, 9});
+            var h = ListNode.GetList(new int[] { 4, 3, 2, 1, 8, 7, 6, 5, 12, 11, 10, 9 });
             var r = Solution.ReverseKGroup(h, 4);
             int expected = 1;
             while (r != null)
@@ -823,7 +823,7 @@ namespace LeetSolutions.UnitTest
             // 7    7   N   4
 
             var result = Solution.CopyRandomListIISol(h);
-           
+
         }
 
         //[Test]
@@ -843,7 +843,7 @@ namespace LeetSolutions.UnitTest
         //    Assert.True(lruCache.GetValueFromKey("a").value == 5);
 
         //    /*
-             
+
         //     {"arguments": ["a"], "method": "getValueFromKey"},
         //    {"arguments": ["a", 1], "method": "insertKeyValuePair"},
         //    {"arguments": ["a"], "method": "getValueFromKey"},
@@ -885,7 +885,7 @@ namespace LeetSolutions.UnitTest
         //    lruCache.InsertKeyValuePair("a", 1);
         //    lruCache.InsertKeyValuePair("b", 2);
         //    lruCache.InsertKeyValuePair("c", 3);
-            
+
         //    Assert.True(lruCache.GetMostRecentKey() == "c");
         //    Assert.True(lruCache.GetValueFromKey("b").value == 1);
         //    Assert.True(lruCache.GetMostRecentKey() == "b");
@@ -961,9 +961,14 @@ namespace LeetSolutions.UnitTest
         [Test]
         public void MaxSumIncreasingSubSequence()
         {
-            var ip = new int[]{ 8, 12, 2, 3, 15, 5, 7 };
+            var ip = new int[] { 8, 12, 2, 3, 15, 5, 7 };
             var r = Solution.MaxSumIncreasingSubsequence(ip);
-
+            Assert.AreEqual(r[0][0], 35);
+            Assert.AreEqual(r[1].Count, 3);
+            ip = new int[] { 5, 4, 3, 2, 1 };
+            r = Solution.MaxSumIncreasingSubsequence(ip);
+            Assert.AreEqual(r[0][0], 5);
+            Assert.AreEqual(r[1].Count, 1);
         }
 
         /*
@@ -998,7 +1003,7 @@ namespace LeetSolutions.UnitTest
         {
             int[] k = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 23, 24, 25 };
             var r = k[6..];
-            var _3rd = k[^3]; 
+            var _3rd = k[^3];
         }
 
         [Test]
@@ -1027,13 +1032,299 @@ namespace LeetSolutions.UnitTest
             sw.Reset();
             var q = new Queue<int>(hs);
             sw.Start();
-            while(q.Count > 0)
+            while (q.Count > 0)
             {
                 q.Dequeue();
             }
             sw.Stop();
             var t2 = sw.ElapsedMilliseconds;
-            var d = (double)(t1 - t2)/ 100;
+            var d = (double)(t1 - t2) / 100;
+        }
+
+        [Test]
+        public void FindFirstMissingPositiveNumber()
+        {
+            var arr = new int[] { 1, 3, 17, 2, 21 };
+            Assert.True(Solution.FindFirstMissingPositive(arr) == 4);
+        }
+
+        [Test]
+        public void TestBinomial()
+        {
+            var n = 5;
+            var k = 4;
+            var r = Solution.Binomial(n, k);
+            Assert.True(r == 5);
+        }
+        [Test]
+        public void TestEditDistance()
+        {
+            var p = "ago";
+            var t = "agog";
+            var r = Solution.EditDistance(p, t, 3, 2);
+            Assert.True(r == 1);
+
+            p = "spotify";
+            t = "spot";
+            r = Solution.EditDistance(p, t, 7, 4);
+            Assert.True(r == 3);
+
+            p = "road";
+            t = "ramp";
+            r = Solution.EditDistance(p, t, 4, 4);
+            Assert.True(r == 3);
+
+            p = "horse";
+            t = "ros";
+            r = Solution.EditDistance(p, t, 5, 3);
+            Assert.True(r == 3);
+        }
+
+
+        [Test]
+        public void TestLongestCommonSubsequence()
+        {
+                var str1 = "ZXVVYZW";
+                var str2 = "XKYKZPW";
+            var r = Solution.LongestCommonSubsequence(str1, str2);
+            Assert.AreEqual(r.Count, 4);
+
+        }
+
+        [Test]
+        public void TestPaintersPartition()
+        {
+            int[] s = {1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            int k = 3;
+            var r = Solution.PainterPartition(s, k);
+            Assert.AreEqual(r.Count, k);
+            Assert.AreEqual(r[2].Count, 2);
+            Assert.AreEqual(r[2][1], 9);
+            Assert.AreEqual(r[2][0], 8);
+
+            int[] s1 = { 1, 1, 1, 1, 1, 1, 1, 1, 1 };
+            r = Solution.PainterPartition(s1, k);
+            Assert.AreEqual(r.Count, k);
+            Assert.AreEqual(r[0].Sum(), 3);
+            Assert.AreEqual(r[1].Sum(), 3);
+            Assert.AreEqual(r[2].Sum(), 3);
+        }
+
+        [Test]
+        public void TestDiskStacking()
+        {
+            var disks = new List<int[]>
+            {
+                new int[]{ 2, 1, 2 },
+                new int[]{ 3, 2, 3},
+                new int[]{ 2, 2, 8 },
+                new int[]{ 2, 3, 4},
+                new int[]{ 1, 3, 1 },
+                new int[]{ 4, 4, 5 } };
+
+            var r = Solution.DiskStacking(disks);
+        }
+
+        [Test]
+        public void TestAddTwoNumbers()
+        {
+            string n1 = "252469";
+            string n2 = "734";
+            var r = Solution.AddNumbers(n1, n2);
+            var expected = "253203";
+            int i = expected.Length - 1;
+            Assert.AreEqual(r, expected);
+            
+        }
+
+
+
+        [Test]
+        public void TestValidStartingCity()
+        {
+            int[] distances = {5, 25, 15, 10, 15};
+            int[] fuel = { 1, 2, 1, 0, 3 };
+            int mpg = 10;
+
+            int r = Solution.ValidStartingCity(distances, fuel, mpg);
+        }
+
+        [Test]
+        public static void TestReturnsToInitPosition()
+        {
+            Assert.True(Solution.ReturnsToInitPosition("LR"));
+            Assert.False(Solution.ReturnsToInitPosition("URURD"));
+            Assert.True(Solution.ReturnsToInitPosition("RUULLDRD"));
+        }
+
+        [Test]
+        public static void TestIsWordCaps()
+        {
+            Assert.True(Solution.IsWordCaps("Test"));
+            Assert.True(Solution.IsWordCaps("TEST"));
+            Assert.True(Solution.IsWordCaps("test"));
+            Assert.False(Solution.IsWordCaps("tEsT"));
+
+        }
+        [Test]
+        public static void TestAddBinaryStr()
+        {
+            var r = Solution.AddBinaryStr("11", "1");
+            Assert.AreEqual(r,"100");
+            r = Solution.AddBinaryStr("100", "1");
+            Assert.AreEqual(r, "101");
+            r = Solution.AddBinaryStr("100", "10");
+            Assert.AreEqual(r, "110");
+            r = Solution.AddBinaryStr("11", "11");
+            Assert.AreEqual(r, "110");
+            r = Solution.AddBinaryStr("110", "11");
+            Assert.AreEqual(r, "1001");
+        }
+
+        [Test]
+        public static void TestaddBinary()
+        {
+            var r = Solution.addBinary("11", "1");
+            Assert.AreEqual(r, "100");
+            r = Solution.addBinary("100", "1");
+            Assert.AreEqual(r, "101");
+            r = Solution.addBinary("100", "10");
+            Assert.AreEqual(r, "110");
+            r = Solution.addBinary("11", "11");
+            Assert.AreEqual(r, "110");
+            r = Solution.addBinary("110", "11");
+            Assert.AreEqual(r, "1001");
+        }
+
+        [Test]
+        public static  void TestLongestCommonPrefix()
+        {
+            Assert.AreEqual(Solution.LongestCommonPrefix(new string[]{ "colorado", "color", "cold"}), "col");
+            Assert.AreEqual(Solution.LongestCommonPrefix(new string[] { "a", "b", "c" }), "");
+            Assert.AreEqual(Solution.LongestCommonPrefix(new string[] { "spot", "spotty", "spotted" }), "spot");
+        }
+
+        [Test]
+        public static void TestCanItBeValidPalindrome()
+        {
+            Assert.IsFalse(Solution.CanItBeValidPalindrome("abccab"));
+            Assert.IsTrue(Solution.CanItBeValidPalindrome("abcba"));
+            Assert.IsTrue(Solution.CanItBeValidPalindrome("foobof"));
+            Assert.IsTrue(Solution.CanItBeValidPalindrome("abac"));
+        }
+
+        [Test]
+        public static void TestRotateArray()
+        {
+
+            TestInLoopFor(Solution.RotateArray(new int[] { 1, 2, 3 }, 1), new int[] { 3, 1, 2 });
+            TestInLoopFor(Solution.RotateArray(new int[] { 1, 2, 3 }, 2), new int[] { 2, 3, 1 });
+            TestInLoopFor(Solution.RotateArray(new int[] { 1, 2, 3 }, 3), new int[] { 1, 2, 3 });
+        }
+
+        [Test]
+        public static void TestSpotTheDiff()
+        {
+            Assert.AreEqual('o', Solution.SpotTheDiff("fobar", "foobar"));
+            Assert.AreEqual(' ', Solution.SpotTheDiff("coding", "ingdoc"));
+            Assert.AreEqual('t', Solution.SpotTheDiff("foobar", "barfoot"));
+            Assert.AreEqual('a', Solution.SpotTheDiff("ide", "idea"));
+        }
+
+        [Test]
+        public static void TestMergeLists()
+        {
+            var r = Solution.MergeLists(ListNode.GetList(new int[] { 1, 3, 5 }), ListNode.GetList(new int[] {2, 3, 4, 6, 8}));
+        }
+
+        [Test]
+        public static void TestRemoveNthNodeFromLast()
+        {
+            var r = Solution.RemoveNthNodeFromLast(ListNode.GetList(new int[] { 2, 3, 4, 6, 8 }), 4);
+            r = Solution.RemoveNthNodeFromLast(ListNode.GetList(new int[] { 2, 3, 4, 6, 8 }), 5);
+            r = Solution.RemoveNthNodeFromLast(ListNode.GetList(new int[] { 2, 3, 4, 6, 8 }), 1);
+            r = Solution.RemoveNthNodeFromLast(ListNode.GetList(new int[] { 2, 3, 4, 6, 8 }), 2);
+        }
+
+        [Test]
+        public static void TestRemoveValue() {
+            var r = Solution.RemoveValue(ListNode.GetList(new int[] { 8, 1, 1, 4, 12 }), 1);
+            r = Solution.RemoveValue(ListNode.GetList(new int[] { 8, 3, 12 }), 12);
+            r = Solution.RemoveValue(ListNode.GetList(new int[] { 8, 3, 12 }), 8);
+        }
+
+        [Test]
+        public static void TestReturnMiddleNode()
+        {
+            var r = Solution.ReturnMiddleNode(ListNode.GetList(new int[] {1,2,3 }));
+            Assert.AreEqual(2, r.val);
+            r = Solution.ReturnMiddleNode(ListNode.GetList(new int[] { 1,2,3,4 }));
+            Assert.AreEqual(3, r.val);
+            r = Solution.ReturnMiddleNode(ListNode.GetList(new int[] { 1 }));
+            Assert.AreEqual(1, r.val);
+        }
+
+        [Test]
+        public static void TestContainsCycle()
+        {
+            var head = ListNode.GetList(new int[] { 1, 2, 3});
+            var tail = ListNode.GetTail(head);
+            tail.next = head;
+            Assert.IsTrue(Solution.ContainsCycle(head));
+            head = ListNode.GetList(new int[] { 1, 2, 3 });
+            Assert.IsFalse(Solution.ContainsCycle(head));
+            head = new ListNode(1);
+            head.next = head;
+            Assert.IsTrue(Solution.ContainsCycle(head));
+        }
+
+        [Test]
+        public static void TestGetCycleStartNode()
+        {
+            var head = ListNode.GetList(new int[] { 1, 2, 3 });
+            var tail = ListNode.GetTail(head);
+            tail.next = head;
+            Assert.AreSame(head, Solution.GetCycleStartNode(head));
+            head = ListNode.GetList(new int[] { 1, 2, 3 });
+            Assert.IsNull(Solution.GetCycleStartNode(head));
+            head = new ListNode(1);
+            head.next = head;
+            Assert.AreSame(head, Solution.GetCycleStartNode(head));
+        }
+
+        [Test]
+        public static void TestReverseLinkedList()
+        {
+            var head = ListNode.GetList(new int[] { 1, 2, 3 });
+            head = Solution.ReverseLinkedList(head);
+            Assert.AreEqual(3, head.val);
+            Assert.AreEqual(2, head.next.val);
+            Assert.AreEqual(1, head.next.next.val);
+        }
+
+        [Test]
+        public static void TestListSum()
+        {
+            var a = ListNode.GetList(new int[] { 1, 2 });
+            var b = ListNode.GetList(new int[] { 1, 3 });
+            var sum = Solution.ListSum(a, b);
+            a = ListNode.GetList(new int[] { 1, 9 });
+            b = ListNode.GetList(new int[] { 1 });
+            sum = Solution.ListSum(a, b);
+        }
+
+        [Test]
+        public static void TestLinkUp()
+        {
+            var a = ListNode.GetList(new int[] {4,7,5,6,3,2,1});
+            a = Solution.LinkUp(a);
+        }
+        public static void TestInLoopFor(int[] arr, int[] expected)
+        {
+            for(int i = 0; i < arr.Length; i++)
+            {
+                Assert.AreEqual(arr[i], expected[i]);
+            }
         }
     }
         

@@ -1,4 +1,6 @@
-﻿namespace LeetSolutions.Algos
+﻿using System.Runtime.CompilerServices;
+
+namespace LeetSolutions.Algos
 {
     public static partial class Solution
     {
@@ -21,6 +23,15 @@
                     cur.next = new ListNode(arr[i]);
                     cur = cur.next;
                 }
+                return head;
+            }
+            public static ListNode GetTail(ListNode head)
+            {
+                while (head.next != null)
+                {
+                    head = head.next;
+                }
+
                 return head;
             }
         }

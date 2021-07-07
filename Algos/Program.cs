@@ -10,16 +10,21 @@ namespace LeetSolutions.Algos
         {
             //var input = new int[]{1,2,3,4,5,6,7,8};
             //var result = Solution.GetListOfPermutationsFor(input);
-            var input = new int[]{ 5, 6, 7, 7, 1, 1, 1, 3, 3, 1, 7, 5,7,6, 1,7,7,5,5,6,1,1,1,1,1 };
+            //var input = new int[]{ 5, 6, 7, 7, 1, 1, 1, 3, 3, 1, 7, 5,7,6, 1,7,7,5,5,6,1,1,1,1,1 };
             // foreach(var list in result){
             //     Print(list);
             // }
             //Print(Solution.TopKElementsByFreq(input, 2));
 
             //Print(TopKSort(new List<int>(input), 2));
-            Solution.FindWordsinSentences();
+            //Solution.FindWordsinSentences();
+            HelloWorld();
         }
-
+        public static void HelloWorld()
+        {
+            Console.WriteLine("Hello World Arya!!");
+            Console.ReadKey();
+        }
         static void Print(List<int> l){
             Console.WriteLine(string.Join(",", l));
         }

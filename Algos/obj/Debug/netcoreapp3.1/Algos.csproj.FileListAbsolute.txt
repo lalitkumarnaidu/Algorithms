@@ -20,3 +20,4 @@
 /Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/Algos/obj/Debug/netcoreapp3.1/Algos.dll
 /Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/Algos/obj/Debug/netcoreapp3.1/Algos.pdb
 /Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/Algos/obj/Debug/netcoreapp3.1/Algos.genruntimeconfig.cache
+/Users/lalitkumarnaidu/Documents/Documents - Lalit’s MacBook Pro/Leet/Solutions/Algos/obj/Debug/netcoreapp3.1/Algos.csprojAssemblyReference.cache

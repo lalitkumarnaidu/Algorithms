@@ -10,6 +10,8 @@ using LeetSolutions.Algos;
 using System.Text;
 using static LeetSolutions.Algos.Solution;
 using System.Security.Cryptography;
+using System.Linq.Expressions;
+using System.Net.Http;
 
 namespace LeetSolutions.Algos{
     public static partial class Solution
@@ -4647,45 +4649,67 @@ Explanation:
             return new int[] { -1, -1 };
         }
 
+        /*
+          Write a function that takes in a non-empty array of integers and returns the
+          greatest sum that can be generated from a strictly-increasing subsequence in
+          the array as well as an array of the numbers in that subsequence. 
+          You can assume that there will only be one increasing subsequence with the
+          greatest sum.
+
+          Sample Input
+          array  = [10, 70, 20, 30, 50, 11, 30]
+
+          Sample Output
+          [110, [10, 20, 30, 50]] 
+
+        */
 
         public static List<List<int>> MaxSumIncreasingSubsequence(int[] array)
         {
             // Write your code here.
+            if (array.Length == 0) return new List<List<int>>();
+            if (array.Length == 1) return new List<List<int>>{
+            new List<int>{array[0]},
+            new List<int>{array[0]}
+        };
+            int[] dp = new int[array.Length];
+            dp[0] = array[0];
             int maxSum = Int32.MinValue;
-            List<int> maxSeq = null;
-            if (array.Length == 0)
-                return new List<List<int>>() { new List<int>() { -1 }, new List<int>() };
+            int?[] maxIndexes = new int?[array.Length];
+            int maxIndex = 0;
             for (int i = 0; i < array.Length; i++)
             {
-                var curSum = 0;
-                var curSeq = new List<int>();
-                for (int j = 0; j < array.Length; j++)
+                dp[i] = array[i];
+                for (int j = 0; j < i; j++)
                 {
-                    if (j == i)
+                    if (array[i] > array[j] && array[i] + dp[j] > dp[i])
                     {
-                        curSum += array[j];
-                        curSeq.Add(array[j]);
-                    }
-                    else if (j < i && array[j] < array[i] && array[j] > 0)
-                    {
-                        if(curSeq.Count == 0 || curSeq.Count > 0 && curSeq[curSeq.Count - 1] < array[j])
-                        curSum += array[j];
-                        curSeq.Add(array[j]);
-                    }
-                    else if (j > i && curSeq[curSeq.Count - 1] < array[j])
-                    {
-                        curSum += array[j];
-                        curSeq.Add(array[j]);
+                        dp[i] = array[i] + dp[j];
+                        maxIndexes[i] = j;
                     }
                 }
-                if (curSum > maxSum)
+                if (dp[i] > maxSum)
                 {
-                    maxSum = curSum;
-                    maxSeq = curSeq;
+                    maxSum = dp[i];
+                    maxIndex = i;
                 }
             }
 
-            return new List<List<int>> { new List<int> { maxSum }, maxSeq };
+            var retval = new List<List<int>>(){
+                   new List<int>(){
+                       maxSum, // Sum of the items.
+			       },
+                   new List<int>(), // Item sequence.
+		};
+
+            retval[1].Insert(0, array[maxIndex]);
+            int? k = maxIndexes[maxIndex];
+            while (k != null)
+            {
+                retval[1].Insert(0, array[(int)k]);
+                k = maxIndexes[(int)k];
+            }
+            return retval;
         }
 
         /*
@@ -4978,8 +5002,1202 @@ Explanation:
             }
             return arr.Length + 1;
         }
+
+
+        public static int Reverse(int x)
+        {
+            bool isNegative = x < 0;
+            double k = x;
+            if (isNegative) k *= -1;
+            var MAXINT = (double)Int32.MaxValue;
+            var MININT = (double)Int32.MinValue;
+            double reversed = 0;
+            while (k > 0)
+            {
+                reversed = (reversed * 10) + k % 10;
+                k = Math.Floor(k / 10);
+            }
+            reversed = isNegative ? -1 * reversed : reversed;
+            if (reversed > MAXINT || reversed < MININT) return 0;
+            return (int)reversed;
+        }
+
+        /*
+         A string S of lowercase English letters is given. We want to partition this string
+        into as many parts as possible so that each letter appears in at most one part, and
+        return a list of integers representing the size of these parts.
+
+ 
+
+            Example 1:
+
+            Input: S = "ababcbacadefegdehijhklij"
+            Output: [9,7,8]
+            Explanation:
+            The partition is "ababcbaca", "defegde", "hijhklij".
+            This is a partition so that each letter appears in at most one part.
+            A partition like "ababcbacadefegde", "hijhklij" is incorrect, because it splits S into less parts.
+ 
+
+            Note:
+
+            S will have length in range [1, 500].
+            S will consist of lowercase English letters ('a' to 'z') only.
+         */
+        public static IList<int> PartitionStr(string S)
+        {
+            var charPos = new Dictionary<char, int>();
+            for (int k = 0; k < S.Length; k++)
+            {
+                if (!charPos.TryAdd(S[k], k))
+                {
+                    charPos[S[k]] = k;
+                }
+            }
+
+            int i = 0;
+            var partitions = new List<int>();
+            while (i < S.Length)
+            {
+                var end = charPos[S[i]];
+                int j = i;
+                while (j != end)
+                {
+                    end = Math.Max(end, charPos[S[j++]]);
+                }
+                partitions.Add(end - i + 1);
+                i = j + 1;
+            }
+
+            return partitions;
+        }
+
+        //find n choose k
+        public static int Binomial(int n, int k)
+        {
+            int[, ] bc = new int[n+1, k+1];
+            for (int i = 0; i <= n; i++)
+            {
+                bc[i, 0] = 1;
+            }
+            for (int i = 0; i <= k; i++)
+            {
+                bc[i, i] = 1;
+            }
+            for (int i = 1; i <= n; i++)
+            {
+                for (int j = 1; j < i; j++)
+                {
+                    bc[i, j] = bc[i - 1, j - 1] + bc[i - 1, j];
+                }
+            }
+            return bc[n, k];
+        }
+
+        //Compute the edit distance of a pattern to be converted as a text.
+        //insertion, deletion, substition cost = 1, match  cost = 0
+        //compare the strings in reverse order and compute the edit distance 
+        public static int EditDistance(string s1, string s2, int m, int n)
+        {
+      
+            int[,] dp = new int[m+1, n+1];
+            for (int i = 1; i <= m; i++)
+            {
+                dp[i, 0] = dp[i - 1, 0] + 1;
+            }
+            for (int i = 1; i <= n; i++)
+            {
+                dp[0, i] = dp[0, i - 1] + 1;
+            }
+
+            for (int i = 1; i <= m; i++)
+            {
+                for (int j = 1; j <= n; j++)
+                {
+                    if (s1[i - 1] != s2[j - 1])
+                    {
+                        dp[i, j] = Math.Min(dp[i - 1, j - 1], Math.Min(dp[i - 1, j], dp[i, j - 1])) + 1;
+                    }
+                    else
+                    {
+                        dp[i, j] = dp[i - 1, j - 1];
+                    }
+                }
+            }
+            return dp[m, n];
+        }
+
+        //Time complexity of this DP solution is O(MN * Min(M, N)) as we are coping the char list each time. 
+        public static List<char> LongestCommonSubsequenceWithoutBackTracking(string str1, string str2)
+        {
+            // Write your code here.
+            int m = str1.Length;
+            int n = str2.Length;
+            List<List<List<char>>> lcs = new List<List<List<char>>>();
+            //initialize matrix 
+            for (int i = 0; i < m + 1; i++)
+            {
+                lcs.Add(new List<List<char>>());
+                for (int j = 0; j < n + 1; j++)
+                {
+                    lcs[i].Add(new List<char>());
+                }
+            }
+            //dp
+            for (int i = 1; i <= m; i++)
+            {
+                for (int j = 1; j <= n; j++)
+                {
+                    if (str1[i - 1] == str2[j - 1])
+                    {
+                        var copy = new List<char>(lcs[i - 1][j - 1]);
+                        lcs[i][j] = copy;
+                        lcs[i][j].Add(str1[i - 1]);
+                    }
+                    else
+                    {
+                        lcs[i][j] = lcs[i - 1][j].Count > lcs[i][j - 1].Count ? lcs[i - 1][j] : lcs[i][j - 1];
+
+                    }
+                }
+            }
+            return lcs[m][n];
+        }
+        private class LCS
+        {
+            public char? lcsChar { get; set; }
+            public int lcs { get; set; }
+            public int row { get; set; }
+            public int col { get; set; }
+        };
+        public static List<char> LongestCommonSubsequence(string str1, string str2)
+        {
+            // Write your code here.
+            List<List<LCS>> lcs = new List<List<LCS>>();
+            int m = str1.Length;
+            int n = str2.Length;
+            for (int i = 0; i <= m; i++)
+            {
+                lcs.Add(new List<LCS>());
+                for (int j = 0; j <= n; j++)
+                {
+                    lcs[i].Add(new LCS());
+                }
+            }
+
+            //DP
+            for (int i = 1; i <= m; i++)
+            {
+                for (int j = 1; j <= n; j++)
+                {
+                    if (str1[i - 1] == str2[j - 1])
+                    {
+                        lcs[i][j].lcsChar = str1[i - 1];
+                        lcs[i][j].lcs = lcs[i - 1][j - 1].lcs + 1;
+                        lcs[i][j].row = i - 1;
+                        lcs[i][j].col = j - 1;
+                    }
+                    else
+                    {
+                        if (lcs[i - 1][j].lcs > lcs[i][j - 1].lcs)
+                        {
+                            lcs[i][j].row = i - 1;
+                            lcs[i][j].col = j;
+                            lcs[i][j].lcs = lcs[i - 1][j].lcs;
+                        }
+                        else
+                        {
+                            lcs[i][j].row = i;
+                            lcs[i][j].col = j - 1;
+                            lcs[i][j].lcs = lcs[i][j - 1].lcs;
+                        }
+                    }
+                }
+            }
+            return GetLCS(lcs, m, n);
+        }
+
+        static List<char> GetLCS(List<List<LCS>> lcs, int m, int n)
+        {
+            int i = m;
+            int j = n;
+            List<char> seq = new List<char>();
+            while (i != 0 && j != 0)
+            {
+                if (lcs[i][j].lcsChar != null)
+                {
+                    seq.Insert(0, (char)lcs[i][j].lcsChar);
+                }
+                var curRow = i;
+                i = lcs[i][j].row;
+                j = lcs[curRow][j].col;
+            }
+            return seq;
+        }
+
+        /*
+            Given a non-empty array of integers, write a function that returns the longest
+            strictly-increasing subsequence in the array.
+        
+              A subsequence of an array is a set of numbers that aren't necessarily adjacent
+              in the array but that are in the same order as they appear in the array. For
+              instance, the numbers [1, 3, 4] form a subsequence of the array
+              [1, 2, 3, 4], and so do the numbers [2, 4]. Note
+              that a single number in an array and the array itself are both valid
+              subsequences of the array.
+           
+            You can assume that there will only be one longest increasing subsequence
+
+            Sample Input
+            array = [5, 7, -24, 12, 10, 2, 3, 12, 5, 6, 35]
+            Sample Output [-24, 2, 3, 5, 6, 35]
+
+
+        Solution time complixity is O(N^2), space complexity is O(N)
+
+         */
+        public static List<int> LongestIncreasingSubsequence(int[] array)
+        {
+            int[] lengths = new int[array.Length];
+            int?[] predecesors = new int?[array.Length];
+            int maxLen = 0;
+            int maxIndex = 0;
+            for (int i = 0; i < array.Length; i++)
+            {
+                lengths[i] = 1;
+                for (int j = 0; j < i; j++)
+                {
+                    if (array[j] < array[i] && lengths[j] >= lengths[i])
+                    {
+                        lengths[i] = lengths[j] + 1;
+                        predecesors[i] = j;
+                    }
+                }
+                if (maxLen <= lengths[i])
+                {
+                    maxLen = lengths[i];
+                    maxIndex = i;
+                }
+            }
+
+            int? p = maxIndex;
+            List<int> retval = new List<int>();
+            while (p != null)
+            {
+                retval.Insert(0, array[(int)p]);
+                p = predecesors[(int)p];
+            }
+            return retval;
+        }
+
+
+        public static List<List<int>> PainterPartition(int[] s, int k)
+        {
+            //dp will be used for storing index of the partition boundary
+            int[,] dp = new int[s.Length + 1, k + 1];
+            //m will be used for storing min of max partition cost 
+            int[,] m = new int[s.Length + 1, k + 1];
+
+            //will be used for storing consequtive sum
+            int[] p = new int[s.Length + 1];
+            int cost = 0;
+            for (int i = 1; i <= s.Length; i++)
+            {
+                p[i] = p[i - 1] + s[i - 1];
+            }
+
+            // intializing for base cases when M(N, K) => M(N, 1) one worker
+            for (int i = 0; i < s.Length; i++)
+            {
+                m[i, 1] = p[i];
+            }
+
+            //intializing for base case when M(N, K) => M(1, K) one job
+            for (int i = 0; i < k; i++)
+            {
+                m[1, i] = s[0];
+            }
+
+            //dp
+
+            for (int i = 2; i <= s.Length; i++)
+            {
+                for (int j = 2; j <= k; j++)
+                {
+                    m[i, j] = Int32.MaxValue;
+                    for (int x = 1; x < i; x++)
+                    {
+                        cost = Math.Max(m[x, j - 1], p[i] - p[x]);
+                        if (m[i, j] > cost)
+                        {
+                            m[i, j] = cost;
+                            dp[i, j] = x;
+                        }
+                    }
+                }
+            }
+
+
+            //reconstruct the partition
+            List<List<int>> retval = new List<List<int>>();
+            int a = s.Length;
+            int b = k;
+
+            while (a > 0)
+            {
+                int l = dp[a, b];
+                List<int> d = new List<int>();
+                for (int x = a; x > l; x--)
+                {
+                    d.Insert(0, s[x - 1]);
+                }
+                retval.Insert(0, d);
+                a = l;
+                b -= 1;
+            }
+
+            return retval;
+        }
+
+
+        public static List<int[]> DiskStacking(List<int[]> disks)
+        {
+            // Write your code here.
+            if (disks.Count < 2) return disks;
+            disks.Sort((x, y) => x[2].CompareTo(y[2]));
+            int[] heights = new int[disks.Count];
+            int maxHeight = disks[0][2];
+            int? maxIndex = null;
+            int?[] seq = new int?[disks.Count];
+            heights[0] = disks[0][2];
+            for (int i = 1; i < disks.Count; i++)
+            {
+                heights[i] = disks[i][2];
+                for (int j = 0; j < i; j++)
+                {
+                    if (disks[j][0] < disks[i][0] && disks[j][1] < disks[i][1] && disks[j][2] < disks[i][2])
+                    {
+                        if (heights[j] + disks[i][2] > heights[i])
+                        {
+                            heights[i] = heights[j] + disks[i][2];
+                            seq[i] = j;
+                        }
+                    }
+                }
+                if (heights[i] > maxHeight)
+                {
+                    maxHeight = heights[i];
+                    maxIndex = i;
+                }
+            }
+
+            var retval = new List<int[]>();
+            int? k = maxIndex;
+            while (k != null)
+            {
+                retval.Insert(0, disks[(int)k]);
+                k = seq[(int)k];
+            }
+            return retval;
+        }
+
+        public static string AddNumbers(string n1, string n2)
+        {
+            var result = new List<int>();
+            int carry = 0;
+            int i = (n1.Length < n2.Length ? n1.Length : n2.Length) - 1;
+            int j = (n1.Length > n2.Length ? n1.Length : n2.Length) - 1;
+            string big=null;
+            string small=null;
+            if(n1.Length == n2.Length || n2.Length > n1.Length)
+            {
+                small = n1; big = n2;
+            }
+            else
+            {
+                big = n1; small = n2; 
+            }
+            for (; i > -1; i--, j--)
+            {
+                int cur = (big[j] - '0') + (small[i] - '0') + carry;
+                carry = cur / 10;
+                result.Insert(0, cur % 10);
+            }
+            while (j > -1)
+            {
+                int cur = (big[j] - '0') + carry;
+                carry = cur / 10;
+                result.Insert(0, cur % 10);
+                j--;
+            }
+            return string.Join("",result);
+        }
+
+
+        public static int MaximizeExpression(int[] array)
+        {
+            // Write your code here.
+            if (array.Length < 4) return 0;
+            int[] a = new int[array.Length];
+            a[0] = array[0];
+            int[] ab = new int[array.Length];
+            ab[0] = Int32.MinValue;
+            int[] abc = new int[array.Length];
+            abc[0] = Int32.MinValue;
+            abc[1] = Int32.MinValue;
+            int[] abcd = new int[array.Length];
+            abcd[0] = Int32.MinValue;
+            abcd[1] = Int32.MinValue;
+            abcd[2] = Int32.MinValue;
+            for (int i = 1; i < array.Length; i++)
+            {
+                a[i] = Math.Max(a[i - 1], array[i]);
+                ab[i] = Math.Max(a[i - 1] - array[i], ab[i - 1]);
+                if (i >= 2)
+                    abc[i] = Math.Max(abc[i - 1], ab[i - 1] + array[i]);
+                if (i >= 3)
+                    abcd[i] = Math.Max(abcd[i - 1], abc[i - 1] - array[i]);
+
+            }
+            return abcd[array.Length - 1];
+        }
+
+        /*
+         
+          Imagine you have a set of cities that are laid out in a circle, connected by a
+          circular road that runs clockwise. Each city has a gas station that provides
+          gallons of fuel, and each city is some distance away from the next city.
+
+          
+          You have a car that can drive some number of miles per gallon of fuel, and
+          your goal is to pick a starting city such that you can fill up your car with
+          that city's fuel, drive to the next city, refill up your car with that city's
+          fuel, drive to the next city, and so on and so forth until you return back to
+          the starting city with 0 or more gallons of fuel left.
+            
+          This city is called a valid starting city, and it's guaranteed that there will
+          always be exactly one valid starting city. For the actual problem, you'll be given
+          an array of distances such that "i" city is distances[i] away from city "i + 1" .
+          Since the cities are connected via a circular road, the last city is connected
+          to the first city. In other words, the last distance in the distances  array is equal
+          to the distance from the last city to the first city. You'll also be given an array of
+          fuel available at each city, where fuel[i]  is equal to the fuel available at city "i".
+          The total amount of fuel available (from all cities combined)
+          is exactly enough to travel to all cities. Your fuel tank always starts out
+          empty, and you're given a positive integer value for the number of miles that
+          your car can travel per gallon of fuel (miles per gallon, or MPG). You can
+          assume that you will always be given at least two cities.
+
+  
+          Write a function that returns the index of the valid starting city.
+          Sample Input:
+            distances  = [5, 25, 15, 10, 15]
+            fuel  = [1, 2, 1, 0, 3] 
+            mpg = 10
+
+           Sample Output:
+            4
+         */
+
+        public static int ValidStartingCity(int[] distances, int[] fuel, int mpg)
+        {
+            int sumOfDistances = 0;
+            int sumOfFuels = 0;
+            int n = distances.Length;
+            for (int i = 0; i < n; i++)
+            {
+                sumOfDistances += distances[i];
+                sumOfFuels += fuel[i];
+            }
+
+            int validStartIdx = 0;
+            for (int i = 0; i < n; i++)
+            {
+                validStartIdx = i;
+                int excludeIdx = (i + (n - 1)) % n;
+                if (sumOfDistances - distances[excludeIdx] <= ((sumOfFuels - fuel[excludeIdx]) * mpg))
+                {
+                    break;
+                }
+            }
+            return validStartIdx;
+        }
+
+        public static bool ReturnsToInitPosition(string s) { 
+            int left = 0;
+            int right = 0;
+            int up = 0;
+            int down = 0;
+            for (int i = 0; i < s.Length; i++) {
+                if (s[i] == 'L') left++;
+                else if (s[i] == 'R') right++;
+                else if (s[i] == 'U') up++;
+                else down++;
+            }
+            return left == right && up == down;
+        }
+
+        public static bool IsWordCaps(string word) {
+            int count = 0;
+            for(int i=0;  i < word.Length; i++)
+            {
+                if (char.IsUpper(word[i])) count++;
+            }
+
+            return count == word.Length || count == 0 || count == 1 && char.IsUpper(word[0]);
+        }
+
+        public static string AddBinaryStr(string a, string b)
+        {
+            var ret = new StringBuilder();
+            var min = a.Length < b.Length ? a: b;
+            var max = a.Length < b.Length ? b: a;
+            int carry = 0;
+            int n = min.Length;
+            int j = max.Length - 1;
+            for(int i = n - 1; i > -1; i--,j--)
+            {
+                if(min[i] == '1' && max[j] == '1')
+                {
+                    if(carry == 1)
+                        ret.Insert(0, '1');
+                    else
+                        ret.Insert(0, '0');
+                    carry = 1;
+                }
+                else if(min[i] == '1' || max[j] == '1')
+                {
+                    if(carry == 1)
+                        ret.Insert(0, '0');
+                    else
+                        ret.Insert(0, '1');
+                }
+                else
+                {
+                    if(carry == 1)
+                        ret.Insert(0, '1');
+                    else
+                        ret.Insert(0, '0');
+                }
+            }
+
+            while(j > -1)
+            {
+                if (carry == 1)
+                {
+                    if (max[j] == '1')
+                    {
+                        ret.Insert(0, '0');
+                    }
+                    else
+                    {
+                        ret.Insert(0, '1');
+                        carry = 0;
+                    }
+                    
+                }
+                else 
+                {
+                    ret.Insert(0, max[j]);
+                }
+                j--;
+            }
+
+            if(carry == 1)
+            {
+                ret.Insert(0, '1');
+            }
+            return ret.ToString();
+        }
+
+        //this is best soln for binary addition
+        public static string addBinary(String a, String b)
+        {
+            StringBuilder result = new StringBuilder();
+            int i = a.Length - 1;
+            int j = b.Length - 1;
+            int carry = 0;
+            while (i >= 0 || j >= 0)
+            {
+                int sum = carry;
+                if (i >= 0)
+                {
+                    sum += a[i--] - '0';
+                }
+                if (j >= 0)
+                {
+                    sum += b[j--] - '0';
+                }
+
+                result.Insert(0, sum % 2);
+                carry = sum / 2;
+            }
+
+            if (carry == 1)
+            {
+                result.Insert(0, 1);
+            }
+
+            return result.ToString();
+        }
+
+        public static string LongestCommonPrefix(string[] input)
+        {
+            int i = 0;
+            var ret = new StringBuilder();
+            while(i < input[0].Length)
+            {
+                var curChar = input[0][i];
+                for(int j = 1; j < input.Length; j++)
+                {
+                    if(i >= input[j].Length || curChar != input[j][i])
+                    {
+                        return ret.ToString();
+                    }
+                }
+               
+                ret.Append(curChar);
+                i++;
+                
+            }
+            return ret.ToString();
+        }
+
+        /*
+         Microsoft-Leet1647-Medium. Minimum Deletions to Make Character Frequencies Unique 
+         A string s is called good if there are no two different characters in s that have the same frequency.
+
+        Given a string s, return the minimum number of characters you need to delete to make s good.
+        The frequency of a character in a string is the number of times it appears in the string.
+        For example, in the string "aab", the frequency of 'a' is 2, while the frequency of 'b' is 1.
+
+        Example 1:
+
+        Input: s = "aab"
+        Output: 0
+        Explanation: s is already good.
+        Example 2:
+
+        Input: s = "aaabbbcc"
+        Output: 2
+        Explanation: You can delete two 'b's resulting in the good string "aaabcc".
+        Another way it to delete one 'b' and one 'c' resulting in the good string "aaabbc".
+        Example 3:
+
+        Input: s = "ceabaacb"
+        Output: 2
+        Explanation: You can delete both 'c's resulting in the good string "eabaab".
+        Note that we only care about characters that are still in the string at the end (i.e. frequency of 0 is ignored).
+
+        Constraints:
+
+        1 <= s.length <= 105
+        s contains only lowercase English letters.
+        */
+
+        public static int MinDeletions(string s)
+        {
+            Dictionary<char, int> dict = new Dictionary<char, int>();
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (dict.ContainsKey(s[i])) dict[s[i]]++;
+                else
+                {
+                    dict.Add(s[i], 1);
+                }
+            }
+            int retval = 0;
+            var set = new HashSet<int>();
+            foreach (var c in dict.Keys)
+            {
+                var k = dict[c];
+                while (k >= 1)
+                {
+                    if (set.Contains(k))
+                    {
+                        k--;
+                        retval++;
+                        continue;
+                    }
+                    else
+                    {
+                        set.Add(k);
+                        break;
+                    }
+                }
+            }
+            return retval;
+        }
+
+        public static bool CanItBeValidPalindrome(string str)
+        {
+            int i = 0;
+            int j = str.Length - 1;
+            while(i < j)
+            {
+                if (str[i] != str[j])
+                {
+                    return IsPalindrome(str, i + 1, j) || IsPalindrome(str, i, j - 1);
+                }
+                i++; j--;
+            }
+
+            return true;
+        }
+
+        private static bool IsPalindrome(string str, int i, int j)
+        {
+            while (j > i)
+            {
+                if(str[i++] != str[j--])
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+        public static int MinSwapsForPalindromeFrom(string str)
+        {
+            int retval = -1;
+
+            return retval;
+        }
+
+        private static bool IsPotentialPalin(string str)
+        {
+            var dict = new Dictionary<char, int>();
+            for (int i = 0; i < str.Length; i++)
+            {
+                if (dict.ContainsKey(str[i])) dict[str[i]]++;
+                else
+                {
+                    dict.Add(str[i], 1);
+                }
+            }
+            return true;
+        }
+
+        //rotate array n times, time complexity is O(N) where N is the size of array
+        public static int[] RotateArray(int[] arr, int n)
+        {
+            int m = arr.Length;
+            int j = 0;
+            int ptr = arr[0];
+            //k is the rotating index where ptn has to be swapped
+            int k = (0 + n) % m;
+            int cnt = 0;
+            while( cnt < m)
+            {
+                //swap operation
+                int t = arr[k];
+                arr[k] = ptr;
+                ptr = t;
+                j = k;
+                k = (j + n) % m;
+                cnt++;
+            }
+            return arr;
+        }
+
+
+        //Jewels stones Amazon
+        public static int JewelsAndStones(string jewel, string stones)
+        {
+            int cnt = 0;
+            if (jewel == "" || stones == "") return cnt;
+            HashSet<char> set = new HashSet<char>();
+            for(int i = 0; i < jewel.Length; i++)
+            {
+                if(!set.Contains(jewel[i]))
+                {
+                    set.Add(jewel[i]);
+                }
+            }
+
+            for (int i = 0; i < stones.Length; i++)
+            {
+                if (set.Contains(stones[i]))
+                {
+                    cnt++;
+                }
+            }
+            return cnt;
+        }
+
+        //Give First Unique Character from a given string
+        public static int FirstUniqueChar(string str)
+        {
+            if (str == "") return -1;
+            Dictionary<char, int> dict = new Dictionary<char, int>();
+            for(int i = 0; i < str.Length; i++)
+            {
+                if(!dict.ContainsKey(str[i]))
+                {
+                    dict.Add(str[i], i);
+                }
+                else
+                    dict[str[i]] = Int32.MaxValue;
+            }
+
+            int min = Int32.MaxValue;
+            foreach(var kv in dict)
+            {
+                min = Math.Min(kv.Value, min);
+            }
+
+            return min < Int32.MaxValue? min:  -1;
+        }
+
+
+        public static char SpotTheDiff(string s, string t)
+        {
+            if(s.Length == t.Length) 
+                return ' ';
+            var dict = new Dictionary<char, int>();
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (!dict.ContainsKey(s[i]))
+                {
+                    dict.Add(s[i], 1);
+                }
+                else
+                    dict[s[i]]++;
+            }
+            
+            for (int i = 0; i < t.Length; i++)
+            {
+                if(!dict.ContainsKey(t[i]) || dict[t[i]] == 0)
+                {
+                    return t[i];
+                }
+                else
+                {
+                    dict[t[i]]--;
+                }
+            }
+            return ' ';
+        }
+
+        #region LinkedList Questions
+
+        //Apple Merge two sorted Linked Lists in ascending order
+
+        public static ListNode MergeLists(ListNode l1, ListNode l2)
+        {
+            
+            ListNode cur = new ListNode(-1);
+            ListNode head = cur;
+            while (l1 != null && l2 != null) {
+                if (l1.val < l2.val)
+                {
+                    cur.next = l1;
+                    l1 = l1.next;
+                }
+                else
+                {
+                    cur.next = l2;
+                    l2= l2.next;
+                }
+                cur = cur.next;
+                cur.next = null;
+            }
+
+            cur.next = l1 != null?l1:l2;
+            return head.next;
+        }
+
+
+
+        //Facebook - Remove the nth to last node
+        /*
+         ex: 1->2->3->null, n = 1; 1->2->null
+         ex: 1->2->3->null, n = 2; 1->3->null
+         ex: 1->2->3->null, n = 3; 2->3->null
+         */
+
+        public static ListNode RemoveNthNodeFromLast(ListNode l, int n)
+        {
+            if (l == null) return l;
+            var dummy = new ListNode(0);
+            dummy.next = l;
+            var fast = dummy;
+            var slow = dummy;
+            while (n > 0)
+            {
+                fast = fast.next;
+                n--;
+            }
+
+            while(fast.next != null)
+            {
+                fast = fast.next;
+                slow = slow.next;
+            }
+
+            slow.next = slow.next.next;
+
+            return dummy.next;
+        }
+
+        //Google- Remove value
+        /*
+            Given a linked list and a value, remove all nodes containing the provided value, and return the resulting list.
+
+            Ex:
+
+               1->2->3->null, k = 3, return 1->2->null
+               8->1->1->4->12->null, value = 1, return 8->4->12->null
+               7->12->2->9->null, k = 7, return 12->2->9->null
+         */
+        public static ListNode RemoveValue(ListNode l, int k)
+        {
+            var dummy = new ListNode(-1);
+            dummy.next = l;
+            var prev = dummy;
+            while(l != null && prev.next != null)
+            {
+                if(prev.next.val == k)
+                {
+                    prev.next = l.next;
+                    var t = l.next;
+                    l.next = null;
+                    l = t;
+                }
+                else
+                {
+                    prev = prev.next;
+                    l = l.next;
+                }
+
+            }
+
+            return dummy.next;
+
+        }
+
+        public static ListNode RemoveValueBetter(ListNode head, int val)
+        {
+            while (head != null && head.val == val)
+            {
+                head = head.next;
+            }
+
+            ListNode dummy = head;
+            while (dummy != null)
+            {
+                if (dummy.next != null && dummy.next.val == val)
+                {
+                    dummy.next = dummy.next.next;
+                }
+                else
+                {
+                    dummy = dummy.next;
+                }
+            }
+
+            return head;
+        }
+
+        //Amazon-Find the middle element, given non-empty linked list, if the linked list contains
+        //even number of elements return the node closer to the end
+        /*
+         Ex:
+            1->2->3->null, return 2
+            1->2->3->4->null, return 3
+            1->null, return 1
+         */
+        public static ListNode ReturnMiddleNode(ListNode l)
+        {
+            int cnt = 0;
+            var dummy = l;
+            while (l != null)
+            {
+                cnt++;
+                l = l.next;
+            }
+
+            for(int i=0; i < cnt/2; i++)
+            {
+                dummy = dummy.next;
+            }
+
+            return dummy;
+        }
+
+        /*
+         Contains Cycle
+            This question is asked by Microsoft. Given a linked list, containing unique numbers, return whether or not it has a cycle.
+            
+            Note: a cycle is a circular arrangement (i.e. one node points back to a previous node)
+            
+            Ex: Given the following linked lists...
+
+            1->2->3->1 -> true (3 points back to 1)
+            1->2->3 -> false
+            1->1 true (1 points to itself)
+         */
+
+        public static bool ContainsCycle(ListNode head)
+        {
+            var fast = head;
+            var slow = head;
+            while(fast != null && fast.next != null)
+            {
+                slow = slow.next;
+                fast = fast.next.next;
+                if (fast == slow)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+
+        public static ListNode GetCycleStartNode(ListNode head)
+        {
+            var fast = head;
+            var slow = head;
+            while (fast != null && fast.next != null)
+            {
+                fast = fast.next.next;
+                slow = slow.next;
+                if(slow == fast)
+                {
+                    break;
+                }
+            }
+
+            if(fast == null || fast.next == null)
+            {
+                return null;
+            }
+
+            slow = head;
+            while(slow != fast)
+            {
+                slow = slow.next;
+                fast = fast.next;
+            }
+
+            return fast;
+        }
+
+        public static ListNode ReverseLinkedList(ListNode head)
+        {
+            ListNode previous = null;
+            while (head != null)
+            {
+                ListNode next = head.next;
+                head.next = previous;
+                previous = head;
+                head = next;
+            }
+
+            return previous;
+        }
+
+        public static ListNode ListSum(ListNode a, ListNode b)
+        {
+            ListNode sum = null;
+            a = ReverseLinkedList(a);
+            b = ReverseLinkedList(b);
+            int carry = 0;
+            while(a != null && b != null)
+            {
+                var node = new ListNode(a.val + b.val + carry);
+                if(node.val > 9)
+                {
+                    carry = 1;
+                    node.val %=10;
+                }
+                else
+                {
+                    carry = 0;
+                }
+                node.next = sum;
+                sum = node;
+                a = a.next;
+                b = b.next;
+            }
+            if(a == null && b == null)
+            {
+                if (carry > 0)
+                {
+                    var node = new ListNode(carry);
+                    node.next = sum;
+                    return node;
+                }
+                return sum;
+            }
+
+            var next = a != null ? a : b;
+            while (next != null)
+            {
+                var node = new ListNode(next.val + carry);
+                if (node.val > 9)
+                {
+                    carry = 1;
+                    node.val %= 10;
+                }
+                else
+                {
+                    carry = 0;
+                }
+                
+                node.next = sum;
+                sum = node;
+                next = next.next;
+            }
+            return sum;
+        }
+
+        //Given a linkedList return a list such that nodes in the odd positions should come first
+        //followed by nodes at even positions
+        /*
+         Ex:
+            input: 4->7->5->6->3->2->1->NULL
+            output: 4->5->3->1->7->6->2->NULL
+         */
+        public static ListNode LinkUp(ListNode head)
+        {
+            ListNode dummyOdd= new ListNode(-1);
+            var odd = dummyOdd;
+            bool toggle = false;
+            ListNode dummyEven = new ListNode(-1);
+            var even = dummyEven;
+            while (head != null)
+            {
+                var nextNode = head.next;
+                head.next = null;
+                if(!toggle)
+                {
+                    odd.next = head;
+                    odd = odd.next;
+                    toggle = true;
+                }
+                else
+                {
+                    even.next = head;
+                    even = even.next;
+                    toggle = false;
+                }
+
+                head = nextNode;
+            }
+
+            odd.next = dummyEven.next;
+            return dummyOdd.next;
+            
+        }
+
+
+        #endregion LinkedList
+
         //end of class
     }
-    //end of namespace
 
+    //end of namespace
 }
+
+

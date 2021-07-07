@@ -1,14 +1,14 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{32E49536-8951-4CE5-B491-B02C793EBFC3}|Default">
   <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="Algos/Solution.cs" Line="6203" Column="1" />
+      <File FileName="Algos/Solution.cs" Line="6183" Column="36" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="LeetSolutions" expanded="True">
             <Node name="Algos" expanded="True">
-              <Node name="Solution.cs" selected="True" />
+              <Node name="ListNode.cs" selected="True" />
             </Node>
             <Node name="UnitTest" expanded="True" />
           </Node>
